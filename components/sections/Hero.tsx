@@ -190,20 +190,7 @@ export default function Hero({
                                 />
                             </span>
                         </a>
-                        <a
-                            href="/cv.pdf"
-                            download="Achmad Dafa Rizqullah-CV.pdf"
-                            className="group w-fit inline-flex items-center gap-3 rounded-full border border-white/15 bg-gradient-to-b from-[#242424] to-[#111111] px-6 py-3 text-base font-semibold tracking-wide text-white shadow-[0_10px_30px_rgba(0,0,0,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:from-[#2a2a2a] hover:to-[#151515]"
-                        >
-                            <span>Download CV</span>
-                            <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-black/50 transition-all duration-300 group-hover:bg-white">
-                                <ArrowRight
-                                    size={16}
-                                    className="text-white transition-transform duration-300 group-hover:translate-x-0.5 group-hover:text-black"
-                                    strokeWidth={2.5}
-                                />
-                            </span>
-                        </a>
+
                     </motion.div>
                 </div>
             </div>

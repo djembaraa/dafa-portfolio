@@ -16,9 +16,9 @@ const CATEGORY = "Video Editing";
 const PAGE_SIZE = 6;
 
 interface PageProps {
-  searchParams?: {
+  searchParams: Promise<{
     page?: string | string[];
-  };
+  }>;
 }
 
 function parsePage(value: string | string[] | undefined) {
@@ -66,7 +66,8 @@ async function getVideoEditingData(page: number) {
 export default async function VideoEditingProjectsPage({
   searchParams,
 }: PageProps) {
-  const page = parsePage(searchParams?.page);
+  const resolvedSearchParams = await searchParams;
+  const page = parsePage(resolvedSearchParams?.page);
   const { projects, totalItems, about } = await getVideoEditingData(page);
   const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
   const hasPrev = page > 1;

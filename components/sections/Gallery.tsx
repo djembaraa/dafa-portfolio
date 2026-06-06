@@ -406,9 +406,9 @@ export default function SelectedWorks({ projects }: SelectedWorksProps) {
                                         <div className="mt-8 flex justify-start">
                                             <Link
                                                 href={viewMoreHref}
-                                                className="group inline-flex items-center gap-3 rounded-full border border-white/15 bg-gradient-to-b from-[#242424] to-[#111111] px-6 py-3 text-base font-semibold tracking-wide text-white shadow-[0_10px_30px_rgba(0,0,0,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:from-[#2a2a2a] hover:to-[#151515]"
+                                                className="group inline-flex items-center gap-2 md:gap-3 rounded-full border border-white/15 bg-gradient-to-b from-[#242424] to-[#111111] px-4 py-2.5 md:px-6 md:py-3 text-[11px] sm:text-sm md:text-base font-semibold tracking-wide text-white shadow-[0_10px_30px_rgba(0,0,0,0.4)] transition-all duration-300 hover:-translate-y-0.5 hover:border-white/30 hover:from-[#2a2a2a] hover:to-[#151515]"
                                             >
-                                                <span>{viewMoreLabel}</span>
+                                                <span className="whitespace-nowrap">{viewMoreLabel}</span>
                                                 <span className="flex h-8 w-8 items-center justify-center rounded-full border border-white/15 bg-black/50 transition-all duration-300 group-hover:bg-white">
                                                     <ArrowRight
                                                         size={16}

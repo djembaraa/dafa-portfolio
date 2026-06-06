@@ -97,7 +97,7 @@ export default function ExperienceSection({ jobs }: ExperienceSectionProps) {
                                     <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-3 w-3 rounded-full border-[3px] border-background bg-accent z-10 shadow-[0_0_10px_rgba(255,255,255,0.2)]" />
 
                                     {/* Right Column */}
-                                    <div className={cn("w-full md:w-1/2 flex hidden md:flex", isLeftCard ? "md:pl-12 lg:pl-16" : "md:pr-12 lg:pr-16 md:justify-start")}>
+                                    <div className={cn("w-full md:w-1/2 flex", isLeftCard ? "md:pl-12 lg:pl-16" : "md:pr-12 lg:pr-16 md:justify-start")}>
                                         {!isLeftCard ? (
                                             /* Card on Right */
                                             <ScrollReveal variant="fade-up" className="w-full sm:w-[90%] md:w-full max-w-lg">
