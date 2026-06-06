@@ -152,6 +152,7 @@ export default async function ProjectPage({ params }: PageProps) {
                                 <video
                                     src={project.videoUrl}
                                     controls
+                                    controlsList="nodownload"
                                     playsInline
                                     className="h-full w-full object-cover"
                                 />

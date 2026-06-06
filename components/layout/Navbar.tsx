@@ -65,16 +65,11 @@ export default function Navbar({ photographerName = "" }: NavbarProps) {
           {/* Main Pill containing Logo and Links */}
           <div
             className={cn(
-              "flex items-center rounded-full border transition-all duration-500",
+              "flex items-center rounded-full border transition-all duration-500 p-1 md:pr-6",
               scrolled
-                ? "glass-navbar glass-navbar--scrolled border-white/10 pr-6"
-                : "glass-navbar border-white/5 pr-6",
+                ? "glass-navbar glass-navbar--scrolled border-white/10"
+                : "glass-navbar border-white/5",
             )}
-            style={{
-              paddingLeft: "4px",
-              paddingTop: "4px",
-              paddingBottom: "4px",
-            }}
           >
             <Link
               href="/"

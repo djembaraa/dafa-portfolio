@@ -133,7 +133,7 @@ export default function Hero({
                         transition={{ duration: 0.9, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
                     >
                         <h1
-                            className="text-[clamp(3.5rem,7vw,6.5rem)] font-bold leading-[1.1] tracking-tight text-white"
+                            className="text-[clamp(2.75rem,8vw,6.5rem)] font-bold leading-[1.1] tracking-tight text-white"
                             style={{ fontFamily: "var(--font-montserrat)" }}
                         >
                             {lineOne} <br />
